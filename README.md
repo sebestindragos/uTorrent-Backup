@@ -6,3 +6,6 @@ Key features :
 - backup uTorrent files from %appdata% and alternate location (if "Store .torrents in" option is enabled)
 - restore files to previous state
 - scan and clean inactive .torrent files
+
+Download link for installer file:
+https://sourceforge.net/projects/utorrentbackup/
