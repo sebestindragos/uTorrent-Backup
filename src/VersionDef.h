@@ -5,6 +5,6 @@
 //   #error "Must include stdafx first."
 // #endif
 
-#define UTORRENT_BACKUP_VERSION L"1.9"
+#define UTORRENT_BACKUP_VERSION L"2.0.0"
 
 #endif // _VERSION_DEF_H_
