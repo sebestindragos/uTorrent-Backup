@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\bencode\bEncodeItem.cpp" />
+    <ClCompile Include="..\src\bencode\bEncodeManager.cpp" />
+    <ClCompile Include="..\src\common\os\BufferConverter.cpp" />
+    <ClCompile Include="..\src\common\os\BufferEncoding.cpp" />
+    <ClCompile Include="..\src\common\os\DpiUtil.cpp" />
+    <ClCompile Include="..\src\common\os\Registry.cpp" />
+    <ClCompile Include="..\src\common\os\WinTaskbar.cpp" />
+    <ClCompile Include="..\src\common\os\WinVersion.cpp" />
+    <ClCompile Include="..\src\common\util\AutoHandle.cpp" />
+    <ClCompile Include="..\src\common\util\BitPacker.cpp" />
+    <ClCompile Include="..\src\common\util\ConsoleException.cpp" />
+    <ClCompile Include="..\src\common\util\File.cpp" />
+    <ClCompile Include="..\src\common\util\FilePath.cpp" />
+    <ClCompile Include="..\src\common\util\FileUtil.cpp" />
+    <ClCompile Include="..\src\common\util\Logger.cpp" />
+    <ClCompile Include="..\src\common\util\StringUtil.cpp" />
+    <ClCompile Include="..\src\common\util\SyncGuard.cpp" />
+    <ClCompile Include="..\src\common\util\UIUtil.cpp" />
+    <ClCompile Include="..\src\common\util\WinException.cpp" />
+    <ClCompile Include="..\src\common\util\WorkerThread.cpp" />
+    <ClCompile Include="..\src\third-party\npp\Utf8_16.cpp" />
+    <ClCompile Include="..\src\utbackup\ActionsView.cpp" />
+    <ClCompile Include="..\src\utbackup\AdvancedView.cpp" />
+    <ClCompile Include="..\src\utbackup\backupinfo\BackupInfoDlg.cpp" />
+    <ClCompile Include="..\src\utbackup\CleanupList.cpp" />
+    <ClCompile Include="..\src\utbackup\mainframeview.cpp" />
+    <ClCompile Include="..\src\utbackup\propertypool\PropertyPool.cpp" />
+    <ClCompile Include="..\src\utbackup\settings\SettingsDialog.cpp" />
+    <ClCompile Include="..\src\utbackup\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\UIManager.cpp" />
+    <ClCompile Include="..\src\utbackup\utmain.cpp" />
+    <ClCompile Include="..\src\utbackup\utorrentbackup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\bencode\bEncodeItem.h" />
+    <ClInclude Include="..\src\bencode\bEncodeManager.h" />
+    <ClInclude Include="..\src\common\os\BufferConverter.h" />
+    <ClInclude Include="..\src\common\os\BufferEncoding.h" />
+    <ClInclude Include="..\src\common\os\CharsetEncoding.h" />
+    <ClInclude Include="..\src\common\os\DpiUtil.h" />
+    <ClInclude Include="..\src\common\os\GdiPlusInit.h" />
+    <ClInclude Include="..\src\common\os\Registry.h" />
+    <ClInclude Include="..\src\common\os\WinTaskbar.h" />
+    <ClInclude Include="..\src\common\os\WinVersion.h" />
+    <ClInclude Include="..\src\common\util\AutoHandle.h" />
+    <ClInclude Include="..\src\common\util\BitPacker.h" />
+    <ClInclude Include="..\src\common\util\ConsoleException.h" />
+    <ClInclude Include="..\src\common\util\ExceptionUtil.h" />
+    <ClInclude Include="..\src\common\util\File.h" />
+    <ClInclude Include="..\src\common\util\FilePath.h" />
+    <ClInclude Include="..\src\common\util\FileUtil.h" />
+    <ClInclude Include="..\src\common\util\IWorkerThreadObserver.h" />
+    <ClInclude Include="..\src\common\util\Logger.h" />
+    <ClInclude Include="..\src\common\util\StringUtil.h" />
+    <ClInclude Include="..\src\common\util\SyncGuard.h" />
+    <ClInclude Include="..\src\common\util\UIUtil.h" />
+    <ClInclude Include="..\src\common\util\WinException.h" />
+    <ClInclude Include="..\src\common\util\WorkerThread.h" />
+    <ClInclude Include="..\src\third-party\npp\Utf8_16.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlapp.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlcrack.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlctrls.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlctrlw.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlctrlx.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlddx.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atldlgs.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atldwm.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlfind.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlframe.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlgdi.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlmisc.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlprint.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlres.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlresce.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlribbon.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlscrl.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlsplit.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atltheme.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atluser.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlwince.h" />
+    <ClInclude Include="..\src\third-party\WTL\Include\atlwinx.h" />
+    <ClInclude Include="..\src\utbackup\AboutDlg.h" />
+    <ClInclude Include="..\src\utbackup\ActionsView.h" />
+    <ClInclude Include="..\src\utbackup\AdvancedView.h" />
+    <ClInclude Include="..\src\utbackup\backupinfo\BackupInfoDlg.h" />
+    <ClInclude Include="..\src\utbackup\CleanupList.h" />
+    <ClInclude Include="..\src\utbackup\Globals.h" />
+    <ClInclude Include="..\src\utbackup\MainFrameView.h" />
+    <ClInclude Include="..\src\utbackup\MainFrm.h" />
+    <ClInclude Include="..\src\utbackup\propertypool\IPropertyObserver.h" />
+    <ClInclude Include="..\src\utbackup\propertypool\IPropertyPool.h" />
+    <ClInclude Include="..\src\utbackup\propertypool\PropertyPool.h" />
+    <ClInclude Include="..\src\utbackup\resource.h" />
+    <ClInclude Include="..\src\utbackup\settings\SettingsDialog.h" />
+    <ClInclude Include="..\src\utbackup\stdafx.h" />
+    <ClInclude Include="..\src\utbackup\UIManager.h" />
+    <ClInclude Include="..\src\utbackup\utorrentbackup.h" />
+    <ClInclude Include="..\src\VersionDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\utbackup\uTorrent Backup.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src\uires\logo.bmp" />
+    <Image Include="..\src\uires\open.bmp" />
+    <Image Include="..\src\uires\remove.bmp" />
+    <Image Include="..\src\uires\uTorrent Backup.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49F6A12E-23BA-4EE7-87B3-7D8F26A83434}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>uTorrentBackup</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformShortName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformShortName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformShortName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformShortName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\utbackup</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src\third-party\wtl\include;$(SolutionDir)..\src\uires;$(SolutionDir)..\src;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\utbackup</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src\third-party\wtl\include;$(SolutionDir)..\src\uires;$(SolutionDir)..\src;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\utbackup</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src\third-party\wtl\include;$(SolutionDir)..\src\uires;$(SolutionDir)..\src;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\utbackup</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src\third-party\wtl\include;$(SolutionDir)..\src\uires;$(SolutionDir)..\src;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

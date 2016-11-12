@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="views">
+      <UniqueIdentifier>{86bbe486-62e2-4546-a7da-ed9e5237080e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{8ae5176b-1388-44db-9f05-cbfc54e09fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utbackup">
+      <UniqueIdentifier>{e2bda275-c9c2-49cd-b1b3-be0d275f243a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertypool">
+      <UniqueIdentifier>{81ea0aeb-caea-44d8-bc0f-8035363cd1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{b27fab92-863d-4d46-83b1-0ccf9429831f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uires">
+      <UniqueIdentifier>{29502b9f-8b83-4abd-81cf-246079199fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{926d5cbc-3a54-407e-8bb3-bbadf834adaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="views\advanced">
+      <UniqueIdentifier>{a13feddb-171f-4158-8598-fb9d05ed0cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backupinfo">
+      <UniqueIdentifier>{c45930de-2d82-4f35-b41e-163cb37e12ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{7fd02277-481c-46f8-9534-902e1f4e3b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\util">
+      <UniqueIdentifier>{fbd33dac-512b-4725-ad1d-09ec214a2774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\os">
+      <UniqueIdentifier>{af82919e-334f-4efd-bffc-764e39a17828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bencode">
+      <UniqueIdentifier>{87db6657-51cc-4662-b73b-7361757e82cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party">
+      <UniqueIdentifier>{9c84c35c-60da-4b89-b173-075391a36324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\wtl">
+      <UniqueIdentifier>{b62d2144-fba8-4406-b081-91e5d2ab680e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\npp">
+      <UniqueIdentifier>{95643506-995e-415f-9357-116f09a7e8b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\utbackup\stdafx.cpp">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\backupinfo\BackupInfoDlg.cpp">
+      <Filter>backupinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\propertypool\PropertyPool.cpp">
+      <Filter>propertypool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\settings\SettingsDialog.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\mainframeview.cpp">
+      <Filter>utbackup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\UIManager.cpp">
+      <Filter>utbackup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\utmain.cpp">
+      <Filter>utbackup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\utorrentbackup.cpp">
+      <Filter>utbackup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\AutoHandle.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\BitPacker.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\ConsoleException.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\File.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\FilePath.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\FileUtil.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\Logger.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\StringUtil.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\SyncGuard.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\UIUtil.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\WinException.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\util\WorkerThread.cpp">
+      <Filter>common\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os\BufferConverter.cpp">
+      <Filter>common\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os\BufferEncoding.cpp">
+      <Filter>common\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os\DpiUtil.cpp">
+      <Filter>common\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os\Registry.cpp">
+      <Filter>common\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os\WinTaskbar.cpp">
+      <Filter>common\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os\WinVersion.cpp">
+      <Filter>common\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\bencode\bEncodeItem.cpp">
+      <Filter>bencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\bencode\bEncodeManager.cpp">
+      <Filter>bencode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\ActionsView.cpp">
+      <Filter>views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\AdvancedView.cpp">
+      <Filter>views\advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utbackup\CleanupList.cpp">
+      <Filter>views\advanced</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\third-party\npp\Utf8_16.cpp">
+      <Filter>third-party\npp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\VersionDef.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\stdafx.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\backupinfo\BackupInfoDlg.h">
+      <Filter>backupinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\propertypool\IPropertyObserver.h">
+      <Filter>propertypool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\propertypool\IPropertyPool.h">
+      <Filter>propertypool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\propertypool\PropertyPool.h">
+      <Filter>propertypool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\settings\SettingsDialog.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\AboutDlg.h">
+      <Filter>utbackup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\Globals.h">
+      <Filter>utbackup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\MainFrameView.h">
+      <Filter>utbackup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\MainFrm.h">
+      <Filter>utbackup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\UIManager.h">
+      <Filter>utbackup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\utorrentbackup.h">
+      <Filter>utbackup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\AutoHandle.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\BitPacker.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\ConsoleException.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\ExceptionUtil.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\File.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\FilePath.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\FileUtil.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\IWorkerThreadObserver.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\Logger.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\StringUtil.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\SyncGuard.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\UIUtil.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\WinException.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\util\WorkerThread.h">
+      <Filter>common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\BufferConverter.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\BufferEncoding.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\CharsetEncoding.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\DpiUtil.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\GdiPlusInit.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\Registry.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\WinTaskbar.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os\WinVersion.h">
+      <Filter>common\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\bencode\bEncodeItem.h">
+      <Filter>bencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\bencode\bEncodeManager.h">
+      <Filter>bencode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\ActionsView.h">
+      <Filter>views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\AdvancedView.h">
+      <Filter>views\advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utbackup\CleanupList.h">
+      <Filter>views\advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlapp.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlcrack.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlctrls.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlctrlw.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlctrlx.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlddx.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atldlgs.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atldwm.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlfind.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlframe.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlgdi.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlmisc.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlprint.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlres.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlresce.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlribbon.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlscrl.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlsplit.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atltheme.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atluser.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlwince.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\WTL\Include\atlwinx.h">
+      <Filter>third-party\wtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\third-party\npp\Utf8_16.h">
+      <Filter>third-party\npp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\utbackup\uTorrent Backup.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src\uires\logo.bmp">
+      <Filter>uires</Filter>
+    </Image>
+    <Image Include="..\src\uires\open.bmp">
+      <Filter>uires</Filter>
+    </Image>
+    <Image Include="..\src\uires\remove.bmp">
+      <Filter>uires</Filter>
+    </Image>
+    <Image Include="..\src\uires\uTorrent Backup.ico">
+      <Filter>uires</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio files
+*.user
+*.sdf
+*.suo
+*aps
+*.opensdf
+*.vc.db
+*.vc.opendb
+
+#uTorrent Backup project excludes
+src/win/Debug/
+src/win/Release/
+src/win/ipch/
+uTorrent Backup-SetupFiles/
+uTorrent Backup-cache/
+
+#Compile output folders
+Debug/
+Release/
+ipch/
+

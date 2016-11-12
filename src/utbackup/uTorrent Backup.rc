@@ -1,0 +1,354 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EDIT_SETTINGS DIALOGEX 0, 0, 327, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,213,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,270,161,50,14
+    LISTBOX         IDC_LIST_SETTINGS,7,7,93,148,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Pack files inside .utb file",IDC_CHECK_PACKFILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,38,202,10
+    CTEXT           "Static",IDC_HEADER,106,7,214,19,SS_SUNKEN | SS_WORDELLIPSIS | WS_BORDER,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "Backup .torrents from alternate location.",IDC_CHECK_BACKUP_ALTERNATE,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,118,56,200,12
+END
+
+IDD_ABOUTBOX DIALOG 0, 0, 187, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
+    CTEXT           "uTorrent Backup v2.0\n\n(c) Copyright 2014 Sebestin Dragos",IDC_STATIC,25,57,78,32
+    ICON            IDR_MAINFRAME,IDC_STATIC,55,26,18,20
+    GROUPBOX        "",IDC_STATIC,7,7,115,88
+END
+
+IDD_UTORRENTBACKUP_FORM DIALOGEX 0, 0, 207, 119
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TABCTRL_VIEWS,"SysTabControl32",0x0,6,7,194,105
+END
+
+IDD_FORM_ACTIONS_VIEW DIALOGEX 0, 0, 172, 67
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 10, "Verdana", 500, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_BACKUP_PATH,27,18,114,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUT_BROWSE,142,19,14,10
+    PUSHBUTTON      "Backup",IDC_BUT_BACKUP,27,33,56,16
+    LTEXT           "Path to the backup file:",IDC_STATIC_PATH,27,8,113,9
+    PUSHBUTTON      "Restore",IDC_BUT_RESTORE,85,33,56,16
+    PUSHBUTTON      "",IDC_BUT_OPEN,2,10,21,21,BS_BITMAP
+    PUSHBUTTON      "",IDC_BUT_REMOVE,2,33,21,21,BS_BITMAP
+    LTEXT           "Show backup information",IDC_ST_BACKUP_INFO,27,54,143,12,NOT WS_VISIBLE
+END
+
+IDD_FORM_ADVANCED_VIEW DIALOGEX 0, 0, 196, 131
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 10, "Verdana", 500, 0, 0x0
+BEGIN
+    GROUPBOX        "Advanced cleanup",IDC_GRP_MAINT,7,10,180,107,0,WS_EX_TRANSPARENT
+    LTEXT           "This page allows you to scan and clean leftover files (e.g. from extracting a torrent that came as an archive).",IDC_ST_CLEANUP_INFO,12,25,168,26
+    CONTROL         "",IDC_LIST_CLEAN_FILES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,53,170,35
+    PUSHBUTTON      "Scan",IDC_BUT_SCAN,12,96,50,14
+    PUSHBUTTON      "Clean",IDC_BUT_CLEAN,132,96,50,14
+END
+
+IDD_FORM_TAB_VIEW DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_BACKUP_INFO DIALOGEX 0, 0, 303, 239
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,246,218,50,14
+    CONTROL         "",IDC_TREE_INFO,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,47,273,157
+    GROUPBOX        "Backup Info",IDC_GRP_BACKUP_INFO,7,7,289,204,0,WS_EX_TRANSPARENT
+    LTEXT           "Filter by",IDC_ST_FILTER_BY,14,24,36,10
+    COMBOBOX        IDC_COMBO_FILTER,53,22,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FILTER,109,21,178,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_EDIT_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        VERTGUIDE, 106
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+        HORZGUIDE, 155
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_UTORRENTBACKUP_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_FORM_ACTIONS_VIEW, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_FORM_ADVANCED_VIEW, DIALOG
+    BEGIN
+        RIGHTMARGIN, 194
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_FORM_TAB_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_BACKUP_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        VERTGUIDE, 14
+        VERTGUIDE, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Root Folder",            ID_FILE_OPENROOTFOLDER
+        MENUITEM "Settings",                    ID_FILE_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About uTorrent Backup",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "uTorrent Backup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "uTorrent Backup"
+            VALUE "FileVersion", "2.0.0"
+            VALUE "InternalName", "uTorrent Backup"
+            VALUE "LegalCopyright", "Copyright 2015 Sebestin Dragos"
+            VALUE "OriginalFilename", "uTorrent Backup.exe"
+            VALUE "ProductName", "uTorrent Backup"
+            VALUE "ProductVersion", "2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_OPEN         BITMAP                  "open.bmp"
+IDB_BITMAP_REMOVE       BITMAP                  "remove.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "uTorrent Backup"
+    IDS_ERROR_CREATE_FILE   """%s"" file could not be created."
+    IDS_ERROR_WRITE_FILE    "Could not write contents to ""%s"" file."
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
